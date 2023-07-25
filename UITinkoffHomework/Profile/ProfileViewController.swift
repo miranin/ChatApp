@@ -8,9 +8,9 @@
 import UIKit
 
 
-final class ViewController: UIViewController {
+final class ProfileViewController: UIViewController {
     
-    private let secondVC = SecondViewController()
+    private let secondVC = EditProfileViewController()
     private var profileImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.clipsToBounds = true
@@ -111,7 +111,7 @@ final class ViewController: UIViewController {
 }
 
 
-extension ViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     
     fileprivate func openCamera() {
